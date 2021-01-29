@@ -135,3 +135,27 @@ body {
 .card:last-child {
   margin-right: 0;
 }
+.card .icon {
+  display: block;
+  width: 100%;
+  height: 130px;
+  margin: 0 auto;
+  font-size: 50px;
+  line-height: 110px;
+  text-align: center;
+}
+.card .category {
+  width: 100%;
+  height: 50px;
+  font-family: "TrebucheMS";
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: #00538c;
+}
+.card .description {
+  font-family: "TrebucheMS";
+  font-size: 15px;
+  text-align: center;
+  color: #0370b9;
+}
