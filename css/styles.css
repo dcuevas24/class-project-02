@@ -34,8 +34,12 @@ body {
   background-image: url(../img/pattern.png);
 }
 .wrap {
-  width: 1200px;
+  width: 1250px;
   margin: 0 auto;
+}
+.gear,
+.icon {
+  font-family: "WebSymbolsRegular";
 }
 
 /*CABECERA*/
@@ -70,7 +74,6 @@ body {
   float: left;
   margin: 8px 0 0 26px;
   font-size: 30px;
-  font-family: "WebSymbolsRegular";
 }
 
 .menu {
@@ -97,7 +100,7 @@ body {
 
 /*BANNER*/
 .banner {
-  width: 95.6%;
+  width: 95.5%;
   height: 100px;
   margin: 20px auto;
   border: 10px solid white;
@@ -110,10 +113,25 @@ body {
   width: 850px;
   margin: 13px auto;
   font-size: 45px;
-
   font-family: "BebasNeue";
   font-weight: normal;
   letter-spacing: 2px;
   color: white;
   text-shadow: 2px 2px 1px black;
+}
+
+/*TARJETAS*/
+.card {
+  float: left;
+  width: 205px;
+  height: 305px;
+  margin: 40px 22px 0;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #ddd;
+  overflow: hidden;
+  background-color: white;
+  cursor: pointer;
+}
+.card:last-child {
+  margin-right: 0;
 }
