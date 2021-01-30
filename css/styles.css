@@ -41,6 +41,10 @@ body {
 .icon {
   font-family: "WebSymbolsRegular";
 }
+.clearfix {
+  float: none;
+  clear: both;
+}
 
 /*CABECERA*/
 .header {
@@ -294,7 +298,6 @@ aside h3 {
   text-decoration: underline;
   color: #2f78bc;
 }
-
 .social {
   height: 190px;
 }
@@ -304,4 +307,81 @@ aside h3 {
   font-size: 30px;
   text-decoration: none;
   color: #333;
+}
+
+/*ARTICULOS*/
+.articles {
+  width: 860px;
+  float: left;
+}
+.articles h2 {
+  display: block;
+  width: 100%;
+  height: 75px;
+  margin: 0 auto 15px;
+  font-family: "BebasNeue";
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: 2px;
+  background-image: url(../img/pxgray.png);
+  box-shadow: 0 1px 0 #393d3f, 1px 2px 0 #393d3f, 2px 3px 0 #393d3f;
+}
+.articles article {
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: "TrebucheMS";
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 2px #ddd;
+}
+.articles article h4 {
+  display: block;
+  margin: 3px;
+  font-size: 23px;
+}
+.articles article h4 a {
+  text-decoration: none;
+  color: #00538c;
+}
+.articles article h4 a:hover {
+  text-decoration: underline;
+}
+.articles article p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.articles .data {
+  float: right;
+  height: 30px;
+  margin: -10px;
+  padding: 4px;
+  border-radius: 0 0 0 5px;
+  font-size: 13px;
+  line-height: 30px;
+  background-color: #393d3f;
+  color: white;
+}
+.articles .data span {
+  margin: 6px;
+}
+.blog {
+  height: 100px;
+  margin-top: 60px;
+  line-height: 100px;
+
+  text-align: center;
+}
+.blog a {
+  display: block;
+  font-family: "BebasNeue";
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #00538c;
+  text-decoration: none;
+  text-transform: uppercase;
 }
