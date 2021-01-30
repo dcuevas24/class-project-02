@@ -385,3 +385,67 @@ aside h3 {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/*FOOTER*/
+.footer {
+  width: 100%;
+  height: 470px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.footer .wrap > div {
+  float: left;
+  width: 320px;
+  height: 370px;
+  margin: 40px;
+  font-family: "TrebucheMS";
+  text-align: center;
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+  color: #37bcf9;
+  transition: all 300ms;
+}
+.footer h5 {
+  display: block;
+  height: 50px;
+  margin-bottom: 15px;
+  background: url(../img/pxgray.png), white;
+  font-family: "BebasNeue";
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 55px;
+  color: black;
+  border-radius: 5px;
+}
+.footer ul {
+  margin: 20px;
+  font-size: 25px;
+  text-align: left;
+}
+.footer ul li {
+  margin-top: 10px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.footer ul li a {
+  display: block;
+  height: 40px;
+}
+.footer iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+}
+.footer img {
+  margin-bottom: 15px;
+}
+.footer .browsers img {
+  width: 45px;
+}
