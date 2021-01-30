@@ -125,7 +125,7 @@ body {
   float: left;
   width: 205px;
   height: 305px;
-  margin: 40px 22px 0;
+  margin: 40px 22px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 2px #ddd;
   overflow: hidden;
@@ -165,7 +165,7 @@ body {
   float: right;
   width: 300px;
   min-height: 1200px;
-  font-weight: "TrebucheMS";
+  font-family: "TrebucheMS";
 }
 aside h3 {
   display: block;
@@ -181,4 +181,127 @@ aside h3 {
   font-size: 30px;
   font-weight: normal;
   letter-spacing: 2px;
+}
+.lateral h3:first-child {
+  margin-top: 0;
+}
+.search {
+  width: 90%;
+  height: 30px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 4px #ccc inset;
+}
+
+.lateral input[type="text"] {
+  width: 85%;
+  height: 30px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ccc;
+  outline: none;
+}
+.lateral input[type="text"]:focus {
+  color: #555;
+}
+.lateral input[type="button"],
+.lateral input[type="submit"] {
+  height: 30px;
+  padding-left: 6px;
+  border: none;
+  border-left: 1px solid #ccc;
+  color: #555;
+  background-color: transparent;
+}
+
+.aside-box {
+  width: 85%;
+  height: 240px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 2px;
+  background-color: white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3),
+    0 1px white inset, 0 -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  display: block;
+  width: 82%;
+  height: 30px;
+  margin: 20px auto 0;
+  padding-left: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc inset;
+  border-radius: 5px;
+  outline: none;
+}
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  color: #555;
+  box-shadow: 1px 1px 1px grey inset;
+}
+.login #user,
+.login #password {
+  display: block;
+  position: absolute;
+  height: 30px;
+  margin: 6px 0 0 30px;
+  text-align: center;
+}
+.login #password {
+  margin: 25px 0 0 35px;
+  font-size: 20px;
+}
+.login input[type="submit"],
+.login input[type="button"],
+.login input[type="reset"],
+.login button {
+  width: 100px;
+  height: 35px;
+  margin: 35px 0px 20px 17px;
+  border: 1px solid #156785;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "TrebucheMS";
+  font-weight: lighter;
+  transition: all 300ms;
+}
+.login input[type="submit"]:hover,
+.login input[type="button"]:hover,
+.login input[type="reset"]:hover,
+.login button:hover {
+  box-shadow: 0 0 3px gray;
+}
+.login a {
+  display: block;
+  margin-left: 18px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #555;
+}
+.login a:hover {
+  text-decoration: underline;
+  color: #2f78bc;
+}
+
+.social {
+  height: 190px;
+}
+.social a {
+  display: block;
+  margin: 10px 0 20px 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #333;
 }
