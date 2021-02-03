@@ -152,6 +152,16 @@ body {
   box-shadow: 0 0 2px gray;
   background-image: url(../img/bakbaner.png);
   background-position: -270px -215px;
+  overflow: hidden;
+  animation: backBanner 10s linear;
+}
+@keyframes backBanner {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -270px -215px;
+  }
 }
 .banner h1 {
   display: block;
@@ -163,8 +173,30 @@ body {
   letter-spacing: 2px;
   color: white;
   text-shadow: 2px 2px 1px black;
+  animation: showText 10s linear;
 }
-
+@keyframes showText {
+  0% {
+    transform: translateX(-600%) scale(5, 5);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(600%) scale(5, 5);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(-600%) scale(5, 5);
+    text-shadow: none;
+    color: transparent;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%) scale(1, 1);
+    text-shadow: 2px 2px 1px black;
+    color: white;
+    opacity: 1;
+  }
+}
 /*TARJETAS*/
 .card {
   float: left;
