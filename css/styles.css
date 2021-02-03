@@ -516,8 +516,8 @@ aside h3 {
   height: 100px;
   margin-top: 60px;
   line-height: 100px;
-
   text-align: center;
+  transition: all 1s;
 }
 .blog a {
   display: block;
@@ -527,6 +527,36 @@ aside h3 {
   color: #00538c;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 1s;
+}
+.blog:hover {
+  border: 10px solid #37bcf9;
+  border-radius: 240px;
+  box-shadow: 0 0 10px gray;
+  background-color: #333;
+  animation: blink 10s infinite linear;
+}
+.blog:hover a {
+  text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black,
+    1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
+  color: white;
+}
+@keyframes blink {
+  0% {
+    border: 10px solid #37bcf9;
+  }
+  25% {
+    border: 10px solid green;
+  }
+  50% {
+    border: 10px solid yellow;
+  }
+  75% {
+    border: 10px solid white;
+  }
+  100% {
+    border: 10px solid #37bcf9;
+  }
 }
 
 /*FOOTER*/
