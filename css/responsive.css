@@ -4,6 +4,7 @@
     margin: 0 auto;
   }
   .banner h1 {
+    width: 100%;
     margin: 23px auto;
     font-size: 35px;
     text-align: center;
@@ -32,5 +33,65 @@
   }
   .footer h5 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .card .category {
+    font-size: 17px;
+  }
+  .card .description {
+    font-size: 14px;
+  }
+  .articles {
+    width: 61%;
+  }
+}
+
+@media (max-width: 960px) {
+  .articles {
+    width: 59%;
+  }
+  .footer .wrap > div {
+    width: 26%;
+    margin: 20px;
+  }
+  .footer h5 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 925px) {
+  .articles {
+    width: 65%;
+  }
+  .lateral {
+    width: 25%;
+  }
+  .lateral input[type="text"] {
+    width: 78%;
+  }
+  .aside-box {
+    width: 95%;
+    min-height: 180px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .login a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .login input[type="email"],
+  .login input[type="password"] {
+    width: 75%;
+  }
+  .login input[type="submit"],
+  .login input[type="button"],
+  .login input[type="reset"],
+  .login button {
+    margin-bottom: 0;
+  }
+  .login input[type="reset"] {
+    display: none;
   }
 }
