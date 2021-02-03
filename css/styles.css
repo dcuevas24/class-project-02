@@ -604,9 +604,16 @@ aside h3 {
   padding: 5px;
   border-bottom: 1px solid #ccc;
 }
+
 .footer ul li a {
   display: block;
   height: 40px;
+  transition: all 300ms;
+}
+.footer ul li:hover a {
+  width: 100%;
+  padding-left: 40px;
+  color: white;
 }
 .footer iframe {
   width: 100%;
